@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --blue: #523FFF;
+    --black: #000000;
+    --gray : #8484A7;
+    --lightgray: #EDEDF9;
+}
+
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #EDEDF9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.skilllibrary{
+    border: 1px solid var(--lightgray);
+    border-radius: 8px;
+    background-color: white;
+    padding: 30px;
+    width: 400px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+}
+
+.skilllibrary .header > h2{
+    font-size: 24px;
+}
+
+.skilllibrary .header > p{
+    padding-top: 5px;
+    padding-bottom: 35px;
+    font-size: 14px;
+    color: #8484A7;
+}
+
+.skilllibrary .header .skilladd > input{
+    border: 1px solid var(--lightgray);
+    border-radius: 6px;
+    overflow: hidden;
+    outline: none;
+    padding: 8px 16px;
+}
+
+.skilllibrary .header .skilladd > button{
+    background-color:#523FFF;
+    padding: 8px 12px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.skilllibrary .header .skilladd > button:hover{
+    background-color: #846AF8;
+}
+
+.skillslist {
+    margin-top: 33px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+  
+.skill-item {
+    border: 1px solid var(--lightgray);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 29px;
+    padding: 8px 12px;
+}
+  
+.skill-item span {
+    font-size: var(--font-size-paragraph);
+}
+  
+.skill-item button {
+    background: none;
+    border: none;
+    color: var(--black);
+}
+
+.skill-item button:hover{
+    color: rgb(230, 36, 36);
+}
